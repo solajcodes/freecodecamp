@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please fill out the following form to give us your feedback:</p>
+  <form id="survey-form">
+    <label for="name" id="name-label">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name here" required>
+<label for="email" id="email-label">Email:</label>
+<input type="email" id="email" placeholder="Enter your email here" required>
+
+<label for="number" id="number-label">Number:</label>
+<input type="number" id="number" min="1" max="100" placeholder="Enter a number between 1 and 100">
+
+<label for="dropdown">Choose an option:</label>
+<select id="dropdown">
+  <option value="option1">Option 1</option>
+  <option value="option2">Option 2</option>
+</select>
+
+<p>Choose a radio button:</p>
+<input type="radio" id="radio1" name="radio" value="radio1">
+<label for="radio1">Radio 1</label><br>
+<input type="radio" id="radio2" name="radio" value="radio2">
+<label for="radio2">Radio 2</label><br>
+
+<p>Choose one or more checkboxes:</p>
+<input type="checkbox" id="checkbox1" value="checkbox1">
+<label for="checkbox1">Checkbox 1</label><br>
+<input type="checkbox" id="checkbox2" value="checkbox2">
+<label for="checkbox2">Checkbox 2</label><br>
+
+<label for="comments">Additional comments:</label>
+<textarea id="comments" placeholder="Enter any additional comments here"></textarea>
+
+<button type="submit" id="submit">Submit</button>
+  </form>
+</body>
+</html>
